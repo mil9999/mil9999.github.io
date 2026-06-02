@@ -29,7 +29,7 @@
     overflow-x: hidden;
     cursor: none;
   }
- 
+
   /* Custom cursor */
   .cursor {
     position: fixed; width: 12px; height: 12px;
@@ -46,7 +46,7 @@
     transform: translate(-50%,-50%);
     transition: transform 0.15s ease, width 0.3s, height 0.3s;
   }
- 
+
   /* Animated grid background */
   body::before {
     content: '';
@@ -58,7 +58,7 @@
     z-index: 0;
     pointer-events: none;
   }
- 
+
   /* Glowing orbs */
   .orb {
     position: fixed; border-radius: 50%;
@@ -70,7 +70,7 @@
   @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(60px,40px)} }
   @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,-60px)} }
   @keyframes float3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,-30px)} }
- 
+
   /* Nav */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -101,10 +101,10 @@
     animation: pulse 2s ease-in-out infinite;
   }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.7} }
- 
+
   /* Sections */
   section { position: relative; z-index: 1; }
- 
+
   /* Hero */
   #hero {
     min-height: 100vh;
@@ -176,7 +176,7 @@
     background-clip: text;
   }
   .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
- 
+
   /* Section headers */
   .section-wrap { max-width: 1100px; margin: 0 auto; padding: 6rem 4rem; }
   .section-label {
@@ -194,7 +194,7 @@
     font-weight: 800; margin-bottom: 3rem;
     line-height: 1.1;
   }
- 
+
   /* Skills */
   #skills { background: rgba(10,22,40,0.5); }
   .skills-grid {
@@ -225,7 +225,7 @@
     border-radius: 2px; color: var(--teal2);
     letter-spacing: 1px;
   }
- 
+
   /* Experience */
   .exp-list { display: flex; flex-direction: column; gap: 2rem; }
   .exp-card {
@@ -256,7 +256,7 @@
     content: '▸'; position: absolute; left: 0;
     color: var(--teal); font-size: 0.7rem; top: 3px;
   }
- 
+
   /* Projects */
   #projects { background: rgba(10,22,40,0.5); }
   .projects-grid {
@@ -297,7 +297,7 @@
     transition: gap 0.2s;
   }
   .project-link:hover { gap: 0.8rem; }
- 
+
   /* Education */
   .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
   .edu-card {
@@ -312,7 +312,7 @@
   .edu-school { font-size: 0.85rem; color: var(--teal2); margin-bottom: 0.3rem; }
   .edu-date { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--muted); margin-bottom: 1rem; }
   .edu-courses { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
- 
+
   /* Certifications */
   .cert-list { display: flex; flex-direction: column; gap: 0.8rem; }
   .cert-item {
@@ -325,7 +325,7 @@
   .cert-item:hover { border-color: var(--teal); }
   .cert-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
   .cert-name { font-size: 0.88rem; color: var(--text); }
- 
+
   /* Contact */
   #contact { background: rgba(10,22,40,0.5); }
   .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -374,7 +374,7 @@
     align-self: flex-start;
   }
   .form-btn:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(0,229,255,0.4); }
- 
+
   /* Footer */
   footer {
     border-top: 1px solid var(--border);
@@ -385,7 +385,7 @@
     position: relative; z-index: 1;
   }
   footer span { color: var(--teal); }
- 
+
   /* Scanline effect */
   body::after {
     content: '';
@@ -399,11 +399,11 @@
     );
     pointer-events: none; z-index: 0;
   }
- 
+
   /* Scroll reveal */
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
- 
+
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
@@ -416,13 +416,13 @@
 </style>
 </head>
 <body>
- 
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursor-ring"></div>
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
- 
+
 <!-- NAV -->
 <nav>
   <div class="nav-logo">MT.portfolio()</div>
@@ -435,7 +435,7 @@
   </ul>
   <div class="nav-badge">OPEN TO INTERNSHIP</div>
 </nav>
- 
+
 <!-- HERO -->
 <section id="about">
   <div class="hero-inner" style="padding: 8rem 4rem 4rem; max-width: 1100px; margin: 0 auto;">
@@ -472,7 +472,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-wrap">
@@ -530,14 +530,14 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-wrap">
     <div class="section-label">// 03. EXPERIENCE</div>
     <h2 class="section-title">My Journey</h2>
     <div class="exp-list">
- 
+
       <div class="exp-card reveal">
         <div class="exp-header">
           <div class="exp-role">Operations & Inventory Assistant</div>
@@ -551,7 +551,7 @@
           <li>Collaborated with operations teams to translate business needs into structured data processes, improving traceability of stock movements across B2B and B2C channels.</li>
         </ul>
       </div>
- 
+
       <div class="exp-card reveal">
         <div class="exp-header">
           <div class="exp-role">Business Development Representative</div>
@@ -565,7 +565,7 @@
           <li>Gained hands-on exposure to e-commerce growth dynamics in an emerging digital market, developing a strong understanding of vendor supply-side and customer demand-side data.</li>
         </ul>
       </div>
- 
+
       <div class="exp-card reveal">
         <div class="exp-header">
           <div class="exp-role">Data & Research Intern</div>
@@ -578,18 +578,18 @@
           <li>Formulated data-driven recommendations from research findings that directly informed programme strategy, presenting insights to senior stakeholders.</li>
         </ul>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-wrap">
     <div class="section-label">// 04. PROJECTS</div>
     <h2 class="section-title">Things I've Built</h2>
     <div class="projects-grid">
- 
+
       <div class="project-card reveal">
         <div class="project-type">BUSINESS INTELLIGENCE</div>
         <div class="project-title">NYC Airbnb Investment Intelligence</div>
@@ -599,7 +599,7 @@
         </div>
         <a href="https://github.com/mil9999" class="project-link" target="_blank">VIEW ON GITHUB →</a>
       </div>
- 
+
       <div class="project-card reveal">
         <div class="project-type">PYTHON · DATA PIPELINE</div>
         <div class="project-title">Global Tech Layoff Analysis</div>
@@ -609,7 +609,7 @@
         </div>
         <a href="https://github.com/mil9999" class="project-link" target="_blank">VIEW ON GITHUB →</a>
       </div>
- 
+
       <div class="project-card reveal">
         <div class="project-type">STATISTICAL ANALYSIS · R</div>
         <div class="project-title">Payment Transaction Anomaly Detection</div>
@@ -619,11 +619,11 @@
         </div>
         <a href="https://github.com/mil9999" class="project-link" target="_blank">VIEW ON GITHUB →</a>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- EDUCATION & CERTS -->
 <section id="education">
   <div class="section-wrap">
@@ -653,7 +653,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-wrap">
@@ -699,11 +699,11 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   Designed & built by <span>Milan Thapa</span> · 2026 · Hosted free on GitHub Pages
 </footer>
- 
+
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
@@ -726,7 +726,7 @@
       ring.style.width = '36px'; ring.style.height = '36px';
     });
   });
- 
+
   // Scroll reveal
   const observer = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
